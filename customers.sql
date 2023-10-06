@@ -1,4 +1,4 @@
-SELECT c.id as customer_id, c.name, c.email, min(o.created_at) as first_order_at, count(o.id) as number_of_orders
+SELECT c.id as customer_id, c.name, c.email, min(o.created_at) as 1st_order_at, count(o.id) as no_of_orders
 FROM `analytics-engineers-club.coffee_shop.customers` as c
 LEFT JOIN `analytics-engineers-club.coffee_shop.orders` as o
 ON c.id = o.customer_id 
